@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
+using System.Diagnostics;
 
 namespace ConsoleApp1
 {
@@ -12,7 +13,10 @@ namespace ConsoleApp1
         static void Main(string[] args)
 
         {
-            while (true)
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+
+            while (sw.Elapsed < TimeSpan.FromSeconds(1))
             {
                 Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("\n\n\n     00\n     00");
@@ -42,6 +46,8 @@ namespace ConsoleApp1
                 Console.WriteLine("\n\n\n     00\n     00");
                 Console.Clear();
             }
+            Console.WriteLine("BOOOM!!");
+            Console.ReadKey();
         }
     }
 }
