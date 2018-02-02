@@ -13,6 +13,25 @@ namespace ConsoleApp1
         static void Main(string[] args)
 
         {
+
+            int userInput = ("1");
+            switch (userInput)
+            {
+                case 1:
+                    Console.WriteLine("Hello World");
+                    break;
+                case 2:
+                    Console.WriteLine("Hej Världen");
+                    break;
+                case 3:
+                    Console.WriteLine("Hola El Mundo");
+               
+            }
+            Thread.Sleep(600);
+
+
+
+
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
